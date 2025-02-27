@@ -20,9 +20,11 @@ Existing alternatives
 **TL;DR:** We pass in 'k' most similar sentences to the query over to GPT with a pre-defined prompt. GPT makes the decision to choose and form the right answer to the query. 
 
 This application has two components - 
-* Semantic Search Part - The user defined Query and the Text corpus are encoded by a Sentence transformer. These encodings are then used to obtain similarities between the query and each sentence in the text corpus. This is done with the help of cosine similarity and then selecting some "top-k" results (in order of similarity scores).
+* Semantic Search Part - The user defined Query and the Text corpus are encoded by a Sentence transformer. These encodings are then used to obtain similarities between the query and each sentence in the text corpus. This is done with the help of cosine similarity and th![WhatsApp Image 2025-02-27 at 20 27 52](https://github.com/user-attachments/assets/0f789f64-7b17-4e6b-87ee-0e3c582e4200)
+en selecting some "top-k" results (in order of similarity scores).
   
 * GPT Inference - The sentences from the text corpus that correspond to those "top-k" scores (basically the most similar `k` sentences) and the original query are then given to the GPT with a pre-defined prompt. This will return the GPT's answer to the user query with the help of top results from the context (the text corpus in this case).
 
 That's all folks! If you like this, go ahead and give this repo a ⭐️
+
 
