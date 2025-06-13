@@ -25,6 +25,22 @@ en selecting some "top-k" results (in order of similarity scores).
   
 * GPT Inference - The sentences from the text corpus that correspond to those "top-k" scores (basically the most similar `k` sentences) and the original query are then given to the GPT with a pre-defined prompt. This will return the GPT's answer to the user query with the help of top results from the context (the text corpus in this case).
 
+---
+
+## 📌 Future Improvements
+
+- PDF file upload and extraction
+- Show top-K similar sentences before GPT response
+- Add summarization mode
+- Maintain query-response conversation history
+- Optional authentication for private access
+- Save answers as `.txt` or `.json`
+- Track query stats and performance metrics
+- Multilingual document & query support
+- Toggle between GPT-3.5 and GPT-4 (if available)
+- Add unit tests and CI support
+
+
 That's all folks! If you like this, go ahead and give this repo a ⭐️
 
 
